@@ -56,11 +56,9 @@ window.onload = function() {
     // if includeCover is true the algorithm should show the cover image
     includeCover: true,
     // this is the image's url that will be used as a background for the profile cover
-    background:
-      "https://imgcdn.stablediffusionweb.com/2024/9/11/20a4982b-cc34-4e80-9762-b4979c39829f.jpg",
+    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
     // this is the url for the profile avatar
-    avatarURL:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1TVHTjn91L3MTf5wGyNSa9elWVPwQjCMC8w&s",
+    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
