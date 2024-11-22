@@ -33,11 +33,13 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name || "Jenny"} ${variables.lastName ||
-    "Ortega"}</h1>
+          <h1>${variables.name || "Marco "} ${variables.lastName ||
+    "Ortiz Valencia "}</h1>
           <h2>${variables.role || "Full Stack Developer"}</h2>
-          <h3>${variables.country || "Spain"} ${variables.city ||
-    "Valencia"}</h3>
+          <h3>${variables.country || "Spain"} ${variables.city || "Murcia"}</h3>
+          <h3>${variables.twitter || "Twitter.com"} ${variables.github ||
+    "Marco-MOV"} ${variables.linkedin || "LinkedIn.com"}</h3>
+
           <ul class="${variables.socialMediaPosition}">
             <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
@@ -56,9 +58,11 @@ window.onload = function() {
     // if includeCover is true the algorithm should show the cover image
     includeCover: true,
     // this is the image's url that will be used as a background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://scontent-mad2-1.xx.fbcdn.net/v/t1.6435-9/202793947_1190798978026732_4453869773998267029_n.jpg?stp=dst-jpg_s960x960&_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=J0HIz07CAMIQ7kNvgF7KWjv&_nc_zt=23&_nc_ht=scontent-mad2-1.xx&_nc_gid=AXm5AvLrJp3U2xjuJZeCw1Q&oh=00_AYCKB5BGTh5AskyaF4YRfBq3mPHefRb3sYaal8Sh7N2ANA&oe=6767886A",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL:
+      "https://scontent-mad2-1.xx.fbcdn.net/v/t39.30808-6/283539109_1406027979837163_3120391208922227068_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=109&ccb=1-7&_nc_sid=fe5ecc&_nc_ohc=lwmEsGrjicYQ7kNvgEr8ug8&_nc_zt=23&_nc_ht=scontent-mad2-1.xx&_nc_gid=AnnM6HZdjZEjBy9LF7UrBvw&oh=00_AYAygABQY3ySAcFyUU9cJ3zd3DeLwz8d-snjF0SVz6xabA&oe=6745EA6B",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
